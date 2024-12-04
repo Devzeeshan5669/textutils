@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
+// import TextForm2 from '../../TextForm2';
 import TextForm from './components/TextForm';
-
 function App() {
   return (
    <>
