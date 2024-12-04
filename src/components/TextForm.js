@@ -56,6 +56,8 @@ const handleExtraSpaces = () => {
         <h1>your text summary</h1>
         <p>{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words and {text.length} characters</p>
         <p>{0.008 * text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} Minutes read</p>
+        <h2>preview</h2>
+        <p>{text}</p>
       </div>
     </>
   );
