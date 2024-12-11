@@ -25,9 +25,8 @@ export default function TextForm(props) {
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(text);
-    props.showAlert("Text Copy!", "success"); 
-  }
+    navigator.clipboard.writeText(text); 
+}
 
 const handleExtraSpaces = () => {
   let newText = text.split(/[ ]+/);
@@ -89,8 +88,6 @@ const reverseText = () => {
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={onAlternatingCase}>Alternating Case</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={reverseText}>Reverse Text</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
-            
-
       </div>
       <div className="container my-3"style={{color: props.mode==='dark'?'white':'black'}}>
         <h1>your text summary</h1>
